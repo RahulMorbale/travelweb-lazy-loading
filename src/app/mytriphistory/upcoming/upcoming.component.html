@@ -1,0 +1,28 @@
+<!-- <app-dashboard></app-dashboard> -->
+<div class="card-body" *ngFor="let item of upcoming">
+    <div class="row">
+      <div class="d-flex flex-nowrap">
+        <div class="col-sm ">
+          <h3><b>Status: </b></h3> {{item.status}}
+        </div>
+        <div class="col-sm ">
+          <h3><b>From: </b></h3> {{item.from}}
+        </div>
+        <div class="col-sm">
+          <h3><b> To: </b> </h3>{{item.to}}
+        </div>
+        <div class="col-sm">
+          <h3><b>Travel Date: </b></h3> {{item.traveldate}}
+        </div>
+        <div class="col-sm">
+          <h3><b>Flight Name: </b></h3> {{item.flightname}}
+        </div>
+        <div class="col-sm">
+          <h3><b>Flight Number:</b></h3> {{item.flightnumber}}
+        </div>
+        <div class="col-sm">
+          <h3><b>Booking Id: </b></h3> {{item.bookingId}}
+        </div>
+      </div>
+    </div>
+  </div>

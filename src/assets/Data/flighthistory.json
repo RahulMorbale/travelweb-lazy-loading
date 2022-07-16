@@ -1,0 +1,38 @@
+{
+    "upcoming": [
+        {
+            "status": "upcoming",
+            "from": "Pune",
+            "to": "Bengaluru",
+            "traveldate": "20/06/22",
+            "flightname": "SpiceJet",
+            "flightnumber": "6E2059",
+            "bookingId": 74563289
+        }
+       
+    ],
+    "cancelled": [
+        {
+            "status": "cancelled",
+            "from": "Goa",
+            "to": "Kolkata",
+            "traveldate": "10/06/22",
+            "flightname": "Go First",
+            "flightnumber": "6E2059",
+            "bookingId": 12345678
+        }
+       
+    ],
+    "completed": [
+        {
+            "status": "completed",
+            "from": "Pune",
+            "to": "Mumbai",
+            "traveldate": "04/06/22",
+            "flightname": "Vistara",
+            "flightnumber": "6E2059",
+            "bookingId": 45625895
+        }
+        
+    ]
+}

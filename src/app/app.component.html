@@ -1,0 +1,47 @@
+<!-- <div *ngIf="showme">
+  <nav class="navbar navbar-expand navbar-light bg-info fixed-nav-bar">
+    <a class="nav-link " routerLink="/flightsearch"><b>  Home</b></a>
+    <a class="nav-link " routerLink="/mytrip"><b> My trip</b></a>
+  </nav>
+</div> -->
+
+<!-- <ng-container>
+  <ng-template #userready>
+    <nav class="navbar navbar-expand navbar-light bg-info fixed-nav-bar align-content-center">
+      <a class="nav-link align-content-center" routerLink="/flightsearch">Home</a>
+    </nav>
+</ng-template>
+<ng-template #usernotready>
+  <div>
+
+  </div>
+</ng-template>
+ 
+</ng-container> -->
+<!-- <app-dashboard></app-dashboard> -->
+<div>
+  <nav class="navbar navbar-expand navbar-light bg-info fixed-nav-bar"
+    style="place-content: center;font-size: x-large;">
+    <a class="nav-link" routerLink="flightbooking/flightsearch"><b> Home</b></a>
+    <a class="nav-link" routerLink="mytriphistory/mytrip"><b> My trip</b></a>
+    <a class="nav-link" routerLink="travel/"><b> Log Out</b></a>
+    
+  </nav>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <ng-container
+      *ngIf="isready; then userready; else usernotready">
+    </ng-container>
+    <ng-template #userready>
+      <div>
+        User is ready
+      </div>
+    </ng-template>
+    <ng-template #usernotready>
+      <div>
+        user is not ready
+      </div>
+    </ng-template> -->

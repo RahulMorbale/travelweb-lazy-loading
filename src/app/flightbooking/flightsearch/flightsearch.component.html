@@ -1,0 +1,48 @@
+<!-- <app-dashboard></app-dashboard> -->
+<form [formGroup]="formobj">
+    <!-- <div class="col-3"> -->
+    <div class=" card-footer  col-6 ">
+        <div class="input-group ">
+            <label>From</label>
+            <select class="form-select" formControlName="From" (change)="check()" [(ngModel)]="From">
+                <!-- <option selected>Mumbai</option> -->
+                <option *ngFor="let item of flightfrom">{{item}}</option>
+            </select>
+            <label>To</label>
+            <select class="form-select" formControlName="To" (change)="check()" [(ngModel)]="To">
+                <!-- <option selected>Pune</option> -->
+                <option *ngFor="let item of flightto">{{item}}</option>
+            </select>
+        </div>
+        <div class="alert alert-danger" *ngIf="error!=null">
+            {{errormsg}}
+        </div>
+        <div>
+            <button (click)="search()">Search</button>
+        </div>
+    </div>
+   
+</form>
+
+
+<!-- <form >
+    <div class="">
+        <mat-form-field appearance="fill">
+            <mat-label>From</mat-label>
+            <mat-select >
+                <mat-option *ngFor="let item of flightlist" value="" #value1>{{item}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="">
+        <mat-form-field appearance="fill">
+            <mat-label>To</mat-label>
+            <mat-select >
+                <mat-option *ngFor="let item of flightlist" value="" #value2>{{item}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div>
+        <button routerLink="/flightdetails"  (click)="search()">Search</button>
+    </div>
+</form> -->
